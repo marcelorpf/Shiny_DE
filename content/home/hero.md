@@ -42,4 +42,8 @@ hero_media = "DE2.jpeg"
 #   label = "Contact me"
 
 +++
-## Esta é a página de aplicações interativas desenvolvidas por professores, alunos e colaboradores do [Departamento de Estatística](https://ufpb.br/de) da [UFPB](https://ufpb.br) usando o pacote [_Shiny_](https://shiny.rstudio.com/) da linguagem [R](https://www.r-project.org/). {style=text-align:justify}
+{{< row >}}
+{{% justify %}}
+Esta é a página de aplicações interativas desenvolvidas por professores, alunos e colaboradores do [Departamento de Estatística](https://ufpb.br/de) da [UFPB](https://ufpb.br) usando o pacote [_Shiny_](https://shiny.rstudio.com/) da linguagem [R](https://www.r-project.org/).
+{{% /justify %}}
+{{< row >}}

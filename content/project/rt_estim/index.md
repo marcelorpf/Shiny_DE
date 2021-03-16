@@ -1,5 +1,5 @@
 ---
-title: Estimação do Número Reprodutivo Efetivo $R_t$ para a edpidemia de Covid-19 no Brasil.
+title: Estimação do Número Reprodutivo Efetivo $R_t$ para a epidemia de Covid-19 no Brasil.
 summary: ""
 tags:
 - Covid-19
