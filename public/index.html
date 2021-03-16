@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Michael Vahn">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Aplicações Shiny - DE/UFPB">
+
+  
+  <link rel="alternate" hreflang="pt-br" href="http://shiny.de.ufpb.br/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#fc6f5c">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.bb5ab09ea511c063bce928c9c03b5ec3.css">
+
+  
+
+  
+  
+  
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Aplicações Shiny - DE/UFPB">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Aplicações Shiny - DE/UFPB">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="http://shiny.de.ufpb.br/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Aplicações Shiny - DE/UFPB">
+  <meta property="og:url" content="http://shiny.de.ufpb.br/">
+  <meta property="og:title" content="Aplicações Shiny - DE/UFPB">
+  <meta property="og:description" content="Aplicações Shiny - DE/UFPB"><meta property="og:image" content="http://shiny.de.ufpb.br/img/icon-192.png">
+  <meta property="twitter:image" content="http://shiny.de.ufpb.br/img/icon-192.png"><meta property="og:locale" content="pt-br">
+  
+  <meta property="og:updated_time" content="2021-03-15T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Aplicações Shiny - DE/UFPB</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Pesquisar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Aplicações Shiny - DE/UFPB</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Alterar navegação"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#hero" data-target="#hero"><span>Início</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects" data-target="#projects"><span>Aplicações</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#colaborate" data-target="#colaborate"><span>Colabore</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact" data-target="#contact"><span>Contato</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  
+
+
+<span class="js-widget-page d-none"></span>
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="hero" class="home-section wg-hero   " style="background-color: #fff;" >
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-md-6 order-md-1 text-center text-md-left align-self-center">
+
+
+    
+    <div><h2 style="text-align:justify" id="esta-é-a-página-de-aplicações-interativas-desenvolvidas-por-professores-alunos-e-colaboradores-do-departamento-de-estatísticahttpsufpbbrde-da-ufpbhttpsufpbbr-usando-o-pacote-_shiny_httpsshinyrstudiocom-da-linguagem-rhttpswwwr-projectorg">Esta é a página de aplicações interativas desenvolvidas por professores, alunos e colaboradores do <a href="https://ufpb.br/de">Departamento de Estatística</a> da <a href="https://ufpb.br">UFPB</a> usando o pacote <a href="https://shiny.rstudio.com/"><em>Shiny</em></a> da linguagem <a href="https://www.r-project.org/">R</a>.</h2>
+</div>
+    
+
+    
+    
+
+  
+  
+  </div>
+  <div class="col-10 mx-auto col-md-6 order-md-2 hero-media">
+    <img class="hero-img img-fluid" src="/img/DE2.jpeg" alt="">
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="projects" class="home-section wg-portfolio   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 text-center section-heading">
+
+    <h1>Aplicações Disponíveis</h1>
+    
+
+  </div>
+  <div class="col-12">
+
+    
+
+      
+
+      
+
+      <div class="isotope projects-container js-layout-masonry ">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+<div class="project-card project-item isotope-item js-id-Covid-19">
+  <div class="card rounded-0 shadow-sm">
+    
+    
+    <a href="http://shiny.de.ufpb.br/rt_estim" target="_blank" rel="noopener" class="card-image">
+      <img src="/project/rt_estim/featured_hub78bc64a0554c982a60292fd989b9ad2_248800_550x0_resize_q90_lanczos_2.png" alt="" class="img-responsive">
+    </a>
+    
+    <div class="card-body">
+      <h4><a href="http://shiny.de.ufpb.br/rt_estim" target="_blank" rel="noopener">Estimação do Número Reprodutivo Efetivo $R_t$ para a edpidemia de Covid-19 no Brasil.</a></h4>
+      <div class="card-desription">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+<div class="project-card project-item isotope-item js-id-Covid-19">
+  <div class="card rounded-0 shadow-sm">
+    
+    
+    <a href="http://shiny.de.ufpb.br/st_pred" target="_blank" rel="noopener" class="card-image">
+      <img src="/project/st_pred/featured_hu9e3f31b83d47d42c629babf7fa617621_539724_550x0_resize_q90_lanczos_2.png" alt="" class="img-responsive">
+    </a>
+    
+    <div class="card-body">
+      <h4><a href="http://shiny.de.ufpb.br/st_pred" target="_blank" rel="noopener">Previsão de curto prazo de novos casos e novos óbitos por Covid-19 para os estados brasileiros e suas capitais.</a></h4>
+      <div class="card-desription">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="colaborate" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Colabore</h1>
+      
+    </div>
+    <div class="col-12">
+      <div class="row">
+<div style="text-align: justify;">
+<p>Gostaria de colaborar com esse projeto do <a href="https://ufpb.br/de">Departamento de Estatística</a> da <a href="https://ufpb.br">UFPB</a>? Entre em <a href="#contact">contato</a> conosco. O Departamento de Estatística dispõe de um servidor Shiny para hospedagem de aplicações. Se você faz uso acadêmico do pacote Shiny, entre em <a href="#contact">contato</a> conosco sobre a viabilidade de hospedar sua aplicação em nosso servidor.</p>
+<p>Você também pode aprender mais sobre o <a href="https://shiny.rstudio.com/tutorial/">Shiny</a>. O Professor <a href="https://marcusnunes.me">Marcus Nunes</a>, do <a href="https://sigaa.ufrn.br/sigaa/public/departamento/portal.jsf?id=47">Departamento de Estatística</a> da <a href="https://ufrn.br/">URFN</a>, explica como instalar e configurar um servidor Shiny em seu próprio computador neste <a href="https://marcusnunes.me/posts/como-instalar-o-shiny-em-seu-proprio-servidor/">tutorial</a>.</p>
+
+</div>
+<div class="row"></div></div>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="contact" class="home-section wg-contact   "  >
+    <div class="container">
+      
+
+
+
+
+<div class="row contact-widget">
+  <div class="col-12 text-center section-heading">
+    <h1>Contato</h1>
+    
+  </div>
+  <div class="col-12">
+    
+  </div>
+  <div class="col-md-6">
+    
+
+  </div>
+  <div class="col-md-12">
+    <ul class="fa-ul" itemscope>
+      
+      <li>
+        <i class="fa-li fas fa-envelope mt-2" aria-hidden="true"></i>
+        <span id="person-email" itemprop="email"><a
+            href="mailto:marcelo.ferreira@academico.ufpb.br">marcelo.ferreira@academico.ufpb.br</a></span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fas fa-phone mt-2" aria-hidden="true"></i>
+        <span id="person-telephone" itemprop="telephone"><a href="tel:&#43;55%2083%203216-7785">&#43;55 83 3216-7785</a></span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fas fa-map-marker-alt mt-2" aria-hidden="true"></i>
+        <span id="person-address" itemprop="address">DE - Departamento de Estatística - CCEN, UFPB, Cidade Universitária s/n, CEP 58051-900, João Pessoa/PB, Brasil</span>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+  </div>
+  <div class="col-12">
+    
+  </div>
+</div>
+    </div>
+  </section>
+
+
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.7276a6a3624de715a5c7f54c7c07696d.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        
+        <p class="mb-0">
+          Copyright © 2021 <a href="https://ufpb.br/de">Departamento de Estatística/UFPB</a>  
+          
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right mb-0">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://instagram.com/estatisticaufpb" target="_blank" rel="noopener" title="Siga-nos"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="mailto:marcelo.ferreira@academico.ufpb.br"  title="Entre em contato"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citação</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
